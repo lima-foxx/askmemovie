@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    /* @apply bg-slate-900 lg:overflow-x-hidden md:overflow-auto overflow-x-hidden !important; */
+    @apply bg-slate-900  overflow-x-hidden !important;
+   }
+}
+
+@layer components {
+  .border-box {
+    @apply bg-slate-900 text-slate-200 border-x  border-b  border-slate-700 rounded-b-lg
+  }
+  .box-title {
+    @apply bg-primaryGreen-500 py-2 rounded-t-lg font-normal text-sm text-center h-8
+  }
+
+  .border-container-card {
+    @apply border-x border-b border-slate-700 rounded-b-lg 
+  }
+
+  .container-card {
+    @apply grid grid-cols-4 gap-3 justify-items-center
+  }
+
+  .container-ads {
+    @apply flex justify-center gap-4
+  }
+
+  .banner-ads-175x270{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[175px] h-[270px]
+  }
+
+  .banner-ads-175x332{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[175px] h-[332px]
+  }
+
+  .banner-ads-175x356{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[175px] h-[356px]
+  }
+
+  .banner-ads-175x384{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[175px] h-[384px]
+  }
+
+  .banner-ads-175x540{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[175px] h-[540px]
+  }
+
+  .banner-ads-796x172{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[796px] h-[172px]
+  }
+
+  .banner-ads-796x264{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[796px] h-[264px]
+  }
+
+  .banner-ads-796x270{
+    @apply flex justify-center items-center text-slate-200 border-2 border-slate-600 w-[796px] h-[270px]
+  }
+}
+
+
+@layer utilities {
+ .font-sans {
+   font-family: "Pentor", sans-serif; 
+   font-weight: 100 !important;
+   font-style: normal;
+  }
+  
+}
+
+@font-face {
+  font-family: "Pentor";
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-regular.eot) format("embedded-opentype");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-regular.woff) format("woff");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-regular.woff2) format("woff2");
+    font-weight: 100;
+}
+
+@font-face {
+  font-family: "Pentor";
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-light.eot) format("embedded-opentype");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-light.woff) format("woff");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-light.woff2) format("woff2");
+  font-weight: 200;
+}
+  
+@font-face {
+  font-family: "Pentor";
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-bold.eot) format("embedded-opentype");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-bold.woff) format("woff");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-bold.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Pentor";
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-semibold.eot) format("embedded-opentype");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-semibold.woff) format("woff");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-semibold.woff2) format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Pentor";
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-extrabold.eot) format("embedded-opentype");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-extrabold.woff) format("woff");
+  src: local("Pentor"),
+    url(~/assets/font/PentorCorporateFont/pentorcorporate-extrabold.woff2) format("woff2");
+  font-weight: 900;
+}
